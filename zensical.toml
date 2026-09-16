@@ -1,17 +1,17 @@
 [project]
-site_name = "Site de suivi &ndash; Projet IFT3150"
-site_description = "Template de site web pour le cours IFT3150"
-site_author = "Louis-Edouard Lafontant"
-site_url = "https://ift3150-template.github.io"
+site_name = "Projet player data &ndash; IFT3150"
+site_description = "Site de suivi du projet player data (Tennis Canada) pour le cours IFT3150"
+site_author = "Nassim Barhoumi"
+site_url = "https://nass1379.github.io/ift3150-player-data/"
 
 copyright = """
-&copy; 2026 <b>DIRO</b> &ndash; Template de site pour le cours IFT3150 <br>
+&copy; 2026 Nassim Barhoumi &ndash; Projet IFT3150 <br>
 Département d'informatique et de recherche opérationnelle <br>
 Université de Montréal
 """
 
-repo_name = "ift3150-template"
-repo_url = "https://github.com/ift3150-template/ift3150-template.github.io"
+repo_name = "nass1379/ift3150-player-data"
+repo_url = "https://github.com/nass1379/ift3150-player-data"
 
 # edit_uri = "edit/main/docs/"
 
