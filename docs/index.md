@@ -42,7 +42,6 @@ Cette étape prépare les mises à jour ; elle ne remplace pas la vérification 
 <details>
 <summary>Voir les tables de staging</summary>
 <p><img src="assets/wta-staging.png" alt="Capture BigQuery : dataset wta_phase1_staging et ses tables de résultats, joueuses, classements et tournois." style="max-width: 440px; width: 100%;"></p>
-<p>Structure des tables intermédiaires, sans affichage des données.</p>
 </details>
 
 ## Collaboration
