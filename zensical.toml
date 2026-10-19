@@ -1,6 +1,7 @@
 [project]
 site_name = "Projet player data &ndash; IFT3150"
 site_description = "Site de suivi du projet player data (Tennis Canada) pour le cours IFT3150"
+extra_css = ["css/tennis-canada.css"]
 site_author = "Nassim Barhoumi"
 site_url = "https://nass1379.github.io/ift3150-player-data/"
 
@@ -28,6 +29,7 @@ nav = [
 # -----------------------------------------------------------------------------
 
 [project.theme]
+logo = "assets/tennis-canada-logo.svg"
 
 language = "fr"
 

@@ -1,0 +1,8 @@
+:root { --md-primary-fg-color: #630b1a; --md-accent-fg-color: #d80019; }
+.project-brand { display:flex; align-items:center; gap:1.25rem; margin:1rem 0 1.5rem; color:#630b1a; }
+.project-brand img { width:100px; height:100px; object-fit:contain; }
+.project-brand strong { font-size:1.65rem; }
+.md-header__button.md-logo img { background:white; border-radius:50%; }
+.md-typeset h2 { color:#630b1a; }
+.md-typeset img[src$="pipeline-wta.svg"] { width:100%; background:#fff; border:1px solid #eadce0; border-radius:12px; }
+@media screen and (min-width:76em) { .md-sidebar--primary { display:none !important; } }

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 300" role="img" aria-labelledby="title desc">
+<title id="title">Pipeline WTA réalisé</title><desc id="desc">Cloud Scheduler déclenche Python et dlt sur Cloud Run. Le traitement utilise Secret Manager pour accéder à l'API WTA et charge les données dans BigQuery.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8" fill="none" stroke="#630b1a"/></marker></defs>
+<rect width="760" height="300" rx="12" fill="white"/>
+<g font-family="Arial, sans-serif" text-anchor="middle" fill="#21282c">
+<g fill="#fff7f8" stroke="#cdaeb5"><rect x="30" y="180" width="165" height="85" rx="10"/><rect x="255" y="180" width="250" height="85" rx="10"/><rect x="565" y="180" width="165" height="85" rx="10"/><rect x="100" y="25" width="240" height="80" rx="10"/><rect x="420" y="25" width="240" height="80" rx="10"/></g>
+<g font-size="19" font-weight="bold"><text x="112" y="215">API WTA</text><text x="380" y="215">Python + dlt</text><text x="647" y="215">BigQuery</text><text x="220" y="57">Cloud Scheduler</text><text x="540" y="57">Secret Manager</text></g>
+<g font-size="16"><text x="112" y="241">Données sources</text><text x="380" y="241">Exécution sur Cloud Run</text><text x="647" y="241">Stockage</text><text x="220" y="83">Lundi · 9 h (Toronto)</text><text x="540" y="83">Clé API</text></g>
+<g fill="none" stroke="#630b1a" stroke-width="2" marker-end="url(#arrow)"><path d="M195 222H253"/><path d="M505 222H563"/><path d="M220 105V140H330V178"/><path d="M540 105V140H430V178"/></g></g></svg>
