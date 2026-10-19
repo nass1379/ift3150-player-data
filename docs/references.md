@@ -6,6 +6,7 @@ title: Références
 
 - **Documentation de l'API WTA** : compréhension des données et des modalités d'extraction (accès sous licence).
 - [Documentation dlt](https://dlthub.com/docs/intro) : structuration et chargement des données.
+- [Staging dans dlt](https://dlthub.com/docs/dlt-ecosystem/staging) : rôle des tables intermédiaires avant la fusion.
 - [Documentation Google Cloud](https://cloud.google.com/docs) : BigQuery, Cloud Run, Cloud Scheduler et Secret Manager.
 - **Documentation technique interne du pipeline WTA** : fonctionnement du pipeline déployé.
 

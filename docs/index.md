@@ -27,6 +27,24 @@ La **WTA est traitée en premier** : son historique est accessible, contrairemen
 - **Mise à jour :** chaque lundi à 9 h (Toronto), avec Cloud Run et Cloud Scheduler.
 - **Volume :** environ 400 000 lignes dans le dataset, pas 400 000 matchs distincts.
 
+### Le staging dans BigQuery
+
+Le **staging** est une zone intermédiaire : dlt y charge le lot récupéré avant de le fusionner dans les tables finales avec `merge`, selon les identifiants configurés.
+
+**Données WTA → staging → tables finales BigQuery**
+
+**Pourquoi ce choix ?** L'API peut renvoyer des données déjà chargées, parfois corrigées. Un simple ajout (`append`) pourrait créer des doublons ; remplacer toute la table (`replace`) avec seulement la saison actuelle ferait perdre l'historique. Le mode `merge` de dlt utilise le staging pour préparer le lot avant de l'intégrer aux tables finales selon les clés configurées.
+
+Une solution sans staging serait possible, mais demanderait une autre stratégie de chargement ou davantage de logique à développer. Ici, le choix est de réutiliser le mécanisme fourni par dlt.
+
+Cette étape prépare les mises à jour ; elle ne remplace pas la vérification de la qualité du dataset.
+
+<details>
+<summary>Voir les tables de staging</summary>
+<p><img src="assets/wta-staging.png" alt="Capture BigQuery : dataset wta_phase1_staging et ses tables de résultats, joueuses, classements et tournois." style="max-width: 440px; width: 100%;"></p>
+<p>Structure des tables intermédiaires, sans affichage des données.</p>
+</details>
+
 ## Collaboration
 
 - **Nassim :** développement du pipeline.
